@@ -1,0 +1,52 @@
+name: AI Commit Bot
+
+on:
+  schedule:
+    - cron: '30 0 * * *'  # chạy lúc 07:30 sáng mỗi ngày (giờ VN)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ai-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Git
+        run: |
+          git config user.name "Lotto Bot"
+          git config user.email "bot@lotto-scanner.dev"
+
+      - name: Generate daily AI quote
+        id: generate
+        run: |
+          quotes=(
+            "Code đẹp là code được viết với tâm."
+            "Đừng debug khi đang đói – bạn sẽ sửa sai thành thảm họa."
+            "Một dòng commit mỗi ngày, giữ tâm trí thảnh thơi."
+            "Chạy test chưa? Nếu chưa, đừng push."
+            "Retro không dành cho kẻ lười – build nhẹ mỗi ngày."
+            "Dù không ai xem repo, bạn vẫn commit vì chính mình."
+            "Bỏ cuộc giữa chừng cũng là bug – fix nó bằng sự kiên trì."
+            "AI có thể viết code, nhưng bạn mới là người ra quyết định."
+          )
+          RANDOM_INDEX=$((RANDOM % ${#quotes[@]}))
+          MESSAGE="${quotes[$RANDOM_INDEX]}"
+          echo "message=$MESSAGE" >> $GITHUB_OUTPUT
+
+      - name: Save quote to file
+        run: |
+          mkdir -p quotes
+          echo "📚 ${{ steps.generate.outputs.message }}" > quotes/daily.md
+
+      - name: Commit and push
+        env:
+          TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        run: |
+          git add quotes/daily.md
+          git commit -m "📚 Daily AI quote: ${{ steps.generate.outputs.message }}"
+          git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}
+          git push origin master
