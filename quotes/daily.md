@@ -1,1 +1,1 @@
-📚 Đừng debug khi đang đói – bạn sẽ sửa sai thành thảm họa.
+📚 AI có thể viết code, nhưng bạn mới là người ra quyết định.
