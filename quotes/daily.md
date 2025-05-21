@@ -1,1 +1,1 @@
-📚 AI có thể viết code, nhưng bạn mới là người ra quyết định.
+📚 Retro không dành cho kẻ lười – build nhẹ mỗi ngày.
