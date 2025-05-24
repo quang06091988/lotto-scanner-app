@@ -1,1 +1,1 @@
-📚 Đừng debug khi đang đói – bạn sẽ sửa sai thành thảm họa.
+📚 Một dòng commit mỗi ngày, giữ tâm trí thảnh thơi.
