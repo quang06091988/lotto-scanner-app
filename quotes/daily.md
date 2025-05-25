@@ -1,1 +1,1 @@
-📚 Một dòng commit mỗi ngày, giữ tâm trí thảnh thơi.
+📚 Dù không ai xem repo, bạn vẫn commit vì chính mình.
