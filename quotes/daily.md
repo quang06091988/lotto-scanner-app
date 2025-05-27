@@ -1,1 +1,1 @@
-📚 Dù không ai xem repo, bạn vẫn commit vì chính mình.
+📚 Bỏ cuộc giữa chừng cũng là bug – fix nó bằng sự kiên trì.
