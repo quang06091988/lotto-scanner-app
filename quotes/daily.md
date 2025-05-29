@@ -1,1 +1,1 @@
-📚 Đừng debug khi đang đói – bạn sẽ sửa sai thành thảm họa.
+📚 Bỏ cuộc giữa chừng cũng là bug – fix nó bằng sự kiên trì.
