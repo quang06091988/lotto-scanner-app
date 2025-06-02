@@ -1,1 +1,1 @@
-📚 Code đẹp là code được viết với tâm.
+📚 Chạy test chưa? Nếu chưa, đừng push.
