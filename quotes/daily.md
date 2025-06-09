@@ -1,1 +1,1 @@
-📚 Bỏ cuộc giữa chừng cũng là bug – fix nó bằng sự kiên trì.
+📚 Retro không dành cho kẻ lười – build nhẹ mỗi ngày.
