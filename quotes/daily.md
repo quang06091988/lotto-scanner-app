@@ -1,1 +1,1 @@
-📚 Retro không dành cho kẻ lười – build nhẹ mỗi ngày.
+📚 Một dòng commit mỗi ngày, giữ tâm trí thảnh thơi.
