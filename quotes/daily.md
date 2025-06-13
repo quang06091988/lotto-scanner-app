@@ -1,1 +1,1 @@
-📚 Đừng debug khi đang đói – bạn sẽ sửa sai thành thảm họa.
+📚 Dù không ai xem repo, bạn vẫn commit vì chính mình.
