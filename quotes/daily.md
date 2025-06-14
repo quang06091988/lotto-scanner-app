@@ -1,1 +1,1 @@
-📚 Dù không ai xem repo, bạn vẫn commit vì chính mình.
+📚 Retro không dành cho kẻ lười – build nhẹ mỗi ngày.
