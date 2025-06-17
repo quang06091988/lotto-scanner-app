@@ -1,1 +1,1 @@
-📚 Bỏ cuộc giữa chừng cũng là bug – fix nó bằng sự kiên trì.
+📚 AI có thể viết code, nhưng bạn mới là người ra quyết định.
